@@ -13,4 +13,4 @@ fi;
 
 [[ -s "resize" ]] && resize > /dev/null;
 
-TERMINFO=$dir/../usr/share/terminfo TERM=$term $dir/ncdu.bin --color dark -i "$@";
+TERM=$term $dir/ncdu.bin --color dark "$@";
